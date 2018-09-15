@@ -1,0 +1,155 @@
+ /* Cuerpo del div inicio */
+body{
+    font-family: 'Roboto', sans-serif;
+    display: inline;
+}
+
+/* Tabla agrupación de estas y su distribución*/
+
+
+i.fas.fa-circle.btn{
+    margin-left: 40%;
+    color: blue;
+    text-align: center;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table.table-bordered{
+    border-color: blue;
+}
+
+/*Descripción de la tabla*/
+
+.titulo-esquema{
+    color: #312f2f;
+    background-color: slategray;
+    text-align: center;
+}
+
+.descripcion-esquema{
+    color: #312f2f;
+    background-color: red;
+    text-align: center;
+}
+
+.col-dosis{
+    text-align: center;
+}
+
+.col-vacunas{
+    text-align: center;
+}
+
+.vacunas-filas{
+    text-align: center;
+}
+
+.periodicidad{
+    text-align: center;
+}
+
+th{
+    font-size: 1.5em;
+}
+
+td{
+    font-size: 1.5em;
+}
+
+#v-track{
+    font-size: 4em;
+}
+
+#txt-carne{
+    font-size: 4em;
+}
+
+@media (max-width: 1000px) {
+    th {font-size: 1em}
+    td {font-size: 1em}
+    th {padding: 0%}
+    td {padding: 0%}
+    #v-track {font-size: 4em}
+    #txt-carne {font-size: 4em}
+ }
+
+@media (max-width: 800px) {
+    th {font-size: 0.8em}
+    td {font-size: 0.8em}
+    th {padding: 0%}
+    td {padding: 0%}
+    #v-track {font-size: 3em}
+    #txt-carne {font-size: 3em}
+ }
+
+ @media (max-width: 600px) {
+    th {font-size: 0.5em}
+    td {font-size: 0.5em}
+    th {padding: 0%}
+    td {padding: 0%}
+    #v-track {font-size: 2em}
+    #txt-carne {font-size: 2em}
+
+ }
+
+
+ /* Barra del menu */
+ .navbar-custom {
+    background: rgb(131, 127, 127);
+}
+a.navbar-brand{
+    width: 16%;
+    font-size: 109%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color:white;
+}
+.custom-colors {
+    background-color: #ecf0f1;
+    color: #ecf0f1;
+}
+
+
+/* Distribución de los componentes*/
+
+.tabla-agrupada{
+    padding: 5%;
+}
+
+#banner{
+    float: right;
+    width: 80%;
+    background-color: blue;
+}
+
+#menu{
+    float: left;
+    width: 20%;
+    height: 1000px;
+    background-color: rgb(95, 95, 243);
+}
+
+#container{
+    float: right;
+    width: 80%;
+}
+
+h3{
+    color: black;
+}
+
+.display-4 {
+    margin: auto;
+    color: black;
+}
+div.milayer.my-3{
+    position: relative;
+}
+.mila{
+    position: relative;
+    text-align: center;
+}
