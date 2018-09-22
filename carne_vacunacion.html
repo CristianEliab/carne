@@ -31,44 +31,6 @@
     </div>
     <!-- Menu -->
     <div id="menu">
-        
-        <!-- Barra del Menu -->
-        <!-- 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom nav-pills nav-stacked">
-            <div class="container px-3">
-                <a class="navbar-brand" href="#">
-                    <i class="fas fa-home"></i> Inicio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">...
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">...</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"> Login
-                                <i class="fas fa-sign-in-alt"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sign up
-                                <i class="fas fa-sign-out-alt"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    -->
     </div>
 
     <!-- Container -->
@@ -80,43 +42,41 @@
             </div>
         </header>
 
-        <div class="tabla-agrupada">
+        <div class="tabla-agrupada" id="flip-scroll">
             <div class="table-responsive table-hover table-condensed">
-                <table class="table table-bordered">
+                <table class="table rtable rtable--flip">
                     <thead>
                         <tr>
-                            <th class="titulo-esquema" colspan="6">Vacunas Primarias</th>
-                        </tr>
-                        <tr>
-                            <th class="descripcion-esquema" colspan="6">Esquema de vacunación sugerido por edad y genero</th>
-                        </tr>
-                        <tr>
-                            <th class="col-vacunas">Vacunas</th>
-                            <th class="col-dosis">1 Dosis</th>
-                            <th class="col-dosis">2 Dosis</th>
-                            <th class="col-dosis">3 Dosis</th>
-                            <th class="col-dosis">4 Dosis</th>
-                            <th class="col-dosis">5 Dosis</th>
+                            <th class="col-vacunas" >Vacunas<br></th>
+                            <th class="col-dosis" >1 Dosis<br></th>
+                            <th class="col-dosis" >2 Dosis<br></th>
+                            <th class="col-dosis" >3 Dosis<br></th>
+                            <th class="col-dosis" >4 Dosis<br></th>
+                            <th class="col-dosis" >5 Dosis<br></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="vacunas-filas">Tetano</td>
-                            <td>
+                            <td >
+                                <div>
+                                    <p class="vacunas-filas btn">Tetano</p>
+                                </div>
+                            </td>
+                            <td >
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
                                     <br>
                                     <p class="periodicidad">04/01/2015</p>
                                 </div>
                             </td>
-                            <td>
+                            <td >
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
                                     <br>
                                     <p class="periodicidad">02/04/2015</p>
                                 </div>
                             </td>
-                            <td>
+                            <td >
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
                                     <br>
@@ -125,7 +85,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="vacunas-filas">Influenza</td>
+                            <td>
+                                <div>
+                                    <p class="vacunas-filas btn">Influenza</p>
+                                </div>
+                            </td>
                             <td>
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
@@ -149,7 +113,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="vacunas-filas">Triple Viral</td>
+                            <td>
+                                <div>
+                                    <p class="vacunas-filas btn">Tripe Viral</p>
+                                </div>
+                            </td>
                             <td>
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
@@ -180,7 +148,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="vacunas-filas">Hepatitis A</td>
+                            <td>
+                                <div>
+                                    <p class="vacunas-filas btn">Hepatitis A</p>
+                                </div>
+                            </td>
                             <td>
                                 <div class="tel col-md-12 col-sm-4">
                                     <i class="fas fa-circle btn"></i>
@@ -226,6 +198,17 @@
     <div id="footer">
 
     </div>
+    <script type="text/javascript">
+    $(window).resize(function(){ 
+        
+        var int=self.setInterval("refresh()",100);
+	    function refresh()
+	    {
+		location.reload(true);
+	    }
+    
+    });
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
